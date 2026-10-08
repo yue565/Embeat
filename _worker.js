@@ -36,12 +36,12 @@ let 自定义应用层协议协商 = '';
 let 订阅转换接口 = 解码64('aHR0cHM6Ly91cmwudjEubWsvc3Vi');
 // 远程配置URL（硬编码）
 const 远程配置网址 = 'https://raw.githubusercontent.com/byJoey/test/refs/heads/main/tist.ini';
-let 启用优选域名 = true; // 优选域名默认关闭
+let 启用优选域名 = false; // 优选域名默认关闭
 let 启用优选地址 = true;
-let 启用仓库优选 = true;
-let 启用原生地址 = false; // 原生地址默认关闭          
+let 启用仓库优选 = false;
+let 启用原生地址 = true; // 原生地址默认关闭          
 // 家宽链式：cfnew 自己的节点当前置，落地换成住宅宽带
-let 启用家宽链式 = false;
+let 启用家宽链式 = true;
 
 let 键值存储 = null;
 let 键值配置 = {};
@@ -442,7 +442,7 @@ function 处理值应用层协议协商值(参数774) {
   if (应用层协议协商) 参数774.set('alpn', 应用层协议协商);
 }
 async function 处理值键值值(本地值773) {
-  const 键值绑定 = 本地值773.C || 本地值773.c;
+  const 键值绑定 = "44c53a1c67a143bba554f393ca83d129";
   if (键值绑定) {
     try {
       键值存储 = 键值绑定;
